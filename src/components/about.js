@@ -65,7 +65,7 @@ const About = () => {
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                 I&apos;m a licensed clinical psychologist (PsyD) based in Los Angeles, CA, with over eight years of experience and more than 500 individual therapy sessions behind me. I received my doctorate from the California School of Professional Psychology, and since then, I've worked across a variety of settings — private practice, academic medical centers, and online platforms — supporting adults navigating anxiety, trauma, relationship challenges, life transitions, and identity exploration.
+                 I&apos;m a licensed clinical psychologist (PsyD) based in Los Angeles, CA, with over eight years of experience and more than 500 individual therapy sessions behind me. I received my doctorate from the California School of Professional Psychology, and since then, I&apos;ve worked across a variety of settings — private practice, academic medical centers, and online platforms — supporting adults navigating anxiety, trauma, relationship challenges, life transitions, and identity exploration.
               </motion.p>
             </div>
           </div>
