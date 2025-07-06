@@ -3,6 +3,8 @@ import { Playfair_Display, Lora,} from 'next/font/google';
 import { Libre_Bodoni } from 'next/font/google';
 import { Tinos } from 'next/font/google';
 import { EB_Garamond } from 'next/font/google';
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 const garamond = EB_Garamond({
   subsets: ['latin'],

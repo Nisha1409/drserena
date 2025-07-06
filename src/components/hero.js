@@ -1,7 +1,10 @@
 'use client';
-
+import { useState } from 'react';
+import ContactFormModal from "./contactForm";
 export default function Hero() {
+  const [showForm, setShowForm] = useState(false);
   return (
+    
     <section className="bg-[#F4F4F2] py-4 sm:py-10 md:pb-14 px-4 md:px-10 overflow-x-hidden ">
       {/* Logo + Name */}
       <div className="flex items-center flex-row sm:flex-row sm:ml-4 mb-2 sm:mb-8 text-center sm:text-left">
@@ -44,7 +47,9 @@ export default function Hero() {
               Helping individuals find clarity, growth, and meaningful change-one conversation at a time.
             </p>
 
-            <button className="mt-4 sm:mt-20 w-[200px] sm:w-[380px] md:w-[280px] h-[60px] md:h-[100px] bg-[#94b0b0] text-white font-medium sm:font-semibold tracking-wide uppercase [border-radius:100%/100%] transition duration-300 hover:opacity-80 shadow-md">
+            <button 
+            onClick={() => setShowForm(true)}
+            className="mt-4 sm:mt-20 w-[200px] sm:w-[380px] md:w-[280px] h-[60px] md:h-[100px] bg-[#94b0b0] text-white font-medium sm:font-semibold tracking-wide uppercase [border-radius:100%/100%] transition duration-300 hover:opacity-80 shadow-md">
               Schedule a <span className="inline sm:hidden lg:inline">
     <br />
   </span> Consultation
@@ -52,6 +57,8 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      <ContactFormModal isOpen={showForm} onClose={() => setShowForm(false)} />
+
     </section>
   );
 }
