@@ -1,14 +1,16 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
 import ContactFormModal from "./contactForm";
 export default function Hero() {
   const [showForm, setShowForm] = useState(false);
   return (
-    
+
     <section className="bg-[#F4F4F2] py-4 sm:py-10 md:pb-14 px-4 md:px-10 overflow-x-hidden ">
       {/* Logo + Name */}
       <div className="flex items-center flex-row sm:flex-row sm:ml-4 mb-2 sm:mb-8 text-center sm:text-left">
-        <img src="/logo.svg" alt="Logo" className="h-20 w-auto" />
+        <Image width={80}
+          height={80} src="/logo.svg" alt="Logo" className="h-20 w-auto" />
         <div className="text-[#6D8A9A] font-lora text-md sm:text-xl tracking-tight leading-tight">
           <p>Dr. Serena Blake, PsyD</p>
           <p>(Clinical Psychologist)</p>
@@ -39,7 +41,7 @@ export default function Hero() {
               Psychological Care for
               <br />
               <span className="leading-tight md:leading-loose block mt-6 md:mt-0 text-[2.4rem] md:text-[2.8rem">
-              Change, Insight, and Well-Being
+                Change, Insight, and Well-Being
               </span>
             </h1>
 
@@ -47,12 +49,12 @@ export default function Hero() {
               Helping individuals find clarity, growth, and meaningful change-one conversation at a time.
             </p>
 
-            <button 
-            onClick={() => setShowForm(true)}
-            className="mt-4 sm:mt-20 w-[200px] sm:w-[380px] md:w-[280px] h-[60px] md:h-[100px] bg-[#94b0b0] text-white font-medium sm:font-semibold tracking-wide uppercase [border-radius:100%/100%] transition duration-300 hover:opacity-80 shadow-md">
+            <button
+              onClick={() => setShowForm(true)}
+              className="mt-4 sm:mt-20 w-[200px] sm:w-[380px] md:w-[280px] h-[60px] md:h-[100px] bg-[#94b0b0] text-white font-medium sm:font-semibold tracking-wide uppercase [border-radius:100%/100%] transition duration-300 hover:opacity-80 shadow-md">
               Schedule a <span className="inline sm:hidden lg:inline">
-    <br />
-  </span> Consultation
+                <br />
+              </span> Consultation
             </button>
           </div>
         </div>

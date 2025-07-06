@@ -1,5 +1,5 @@
 'use client';
-
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
@@ -34,9 +34,9 @@ const Contact = () => {
 
                 {/* Footer Links (optional) */}
                 <div className="mt-1 pt-6 pb-2 flex flex-row justify-center gap-4 text-sm text-black">
-                    <a href="/" className="underline">Home</a>
-                    <a href="/privacy-policy" className="underline">Privacy Policy</a>
-                    <a href="/good-faith-estimate" className="underline">Good Faith Estimate</a>
+                    <Link href="/" className="underline">Home</Link>
+                    <Link href="/privacy-policy" className="underline">Privacy Policy</Link>
+                    <Link href="/good-faith-estimate" className="underline">Good Faith Estimate</Link>
                 </div>
                 <p className="hidden sm:block mt-16 text-[#6b6b6b] text-xl font-lora" >© 2025 Serena Blake, PsyD. All rights reserved.</p>
             </motion.div>

@@ -57,7 +57,7 @@ const About = () => {
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                 Finding time to truly care for ourselves can feel nearly impossible in today’s fast-moving, high-pressure world. I view therapy as a sacred space — one where we pause, reflect, and reconnect with who we are and what we need. To me, therapy isn’t just about solving problems — it’s about discovering clarity, cultivating strength, and making room for self-compassion.
+                 Finding time to truly care for ourselves can feel nearly impossible in today&apos;s fast-moving, high-pressure world. I view therapy as a sacred space — one where we pause, reflect, and reconnect with who we are and what we need. To me, therapy isn&apos;t just about solving problems — it&apos;s about discovering clarity, cultivating strength, and making room for self-compassion.
               </motion.p>
               <motion.p
                 initial={{ opacity: 0, y: 24 }}
@@ -65,7 +65,7 @@ const About = () => {
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                 I’m a licensed clinical psychologist (PsyD) based in Los Angeles, CA, with over eight years of experience and more than 500 individual therapy sessions behind me. I received my doctorate from the California School of Professional Psychology, and since then, I've worked across a variety of settings — private practice, academic medical centers, and online platforms — supporting adults navigating anxiety, trauma, relationship challenges, life transitions, and identity exploration.
+                 I&apos;m a licensed clinical psychologist (PsyD) based in Los Angeles, CA, with over eight years of experience and more than 500 individual therapy sessions behind me. I received my doctorate from the California School of Professional Psychology, and since then, I've worked across a variety of settings — private practice, academic medical centers, and online platforms — supporting adults navigating anxiety, trauma, relationship challenges, life transitions, and identity exploration.
               </motion.p>
             </div>
           </div>
